@@ -50,8 +50,8 @@ WebServer webServer(80);
 DNSServer dnsServer;
 
 // Configuration Variables (Disimpan di Flash Memory / NVS)
-String wifiSsid        = "";
-String wifiPassword    = "";
+String wifiSsid        = "HOME_DJB";
+String wifiPassword    = "112233qw";
 String mqttBroker      = "192.168.1.50";
 int    mqttPort        = 1883;
 String mqttUser        = "";
@@ -284,7 +284,7 @@ void startConfigPortal() {
 
 void loadStoredConfig() {
   preferences.begin("smart_switch", false);
-  wifiSsid         = preferences.getString("wifi_ssid", "HOME_DJB 5G");
+  wifiSsid         = preferences.getString("wifi_ssid", "HOME_DJB");
   wifiPassword     = preferences.getString("wifi_pass", "112233qw");
   mqttBroker       = preferences.getString("mqtt_broker", "192.168.1.50");
   mqttPort         = preferences.getInt("mqtt_port", 1883);
