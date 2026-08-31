@@ -52,7 +52,7 @@ DNSServer dnsServer;
 // Configuration Variables (Disimpan di Flash Memory / NVS)
 String wifiSsid        = "";
 String wifiPassword    = "";
-String mqttBroker      = "192.168.1.3";
+String mqttBroker      = "192.168.1.50";
 int    mqttPort        = 1883;
 String mqttUser        = "";
 String mqttPass        = "";
@@ -286,7 +286,7 @@ void loadStoredConfig() {
   preferences.begin("smart_switch", false);
   wifiSsid         = preferences.getString("wifi_ssid", "HOME_DJB 5G");
   wifiPassword     = preferences.getString("wifi_pass", "112233qw");
-  mqttBroker       = preferences.getString("mqtt_broker", "192.168.1.3");
+  mqttBroker       = preferences.getString("mqtt_broker", "192.168.1.50");
   mqttPort         = preferences.getInt("mqtt_port", 1883);
   customDeviceName = preferences.getString("dev_name", "Smart Switch ESP32");
   currentRelayState= preferences.getBool("relay_state", false);
