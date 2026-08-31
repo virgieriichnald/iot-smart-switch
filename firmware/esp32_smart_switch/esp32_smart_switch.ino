@@ -22,13 +22,11 @@
 
 // ======================= 1. USER CONFIGURATION =======================
 // Ganti dengan kredensial Wi-Fi Anda
-const char* WIFI_SSID     = "NAMA_WIFI_ANDA";
-const char* WIFI_PASSWORD = "PASSWORD_WIFI_ANDA";
+const char* WIFI_SSID     = "HOME_DJB 5G";
+const char* WIFI_PASSWORD = "112233qw";
 
 // IP Address Laptop / Raspberry Pi yang menjalankan Mosquitto MQTT Broker
-// Contoh saat testing di Laptop: "192.168.1.50"
-// Saat di Raspberry Pi: "192.168.1.100" atau "raspberrypi.local"
-const char* MQTT_BROKER   = "192.168.1.50";
+const char* MQTT_BROKER   = "192.168.1.3";
 const int   MQTT_PORT     = 1883;
 const char* MQTT_USER     = "";  // Kosongkan jika allow_anonymous true
 const char* MQTT_PASS     = "";  // Kosongkan jika allow_anonymous true
