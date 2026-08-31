@@ -1,0 +1,49 @@
+# Environment files
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Mosquitto data & logs
+mosquitto/data/
+mosquitto/log/
+*.log
+
+# Laravel Server
+server/vendor/
+server/node_modules/
+server/public/build/
+server/public/hot/
+server/public/storage/
+server/storage/*.key
+server/storage/pail/
+server/storage/logs/*.log
+server/.phpunit.result.cache
+server/auth.json
+server/_ide_helper.php
+server/Homestead.json
+server/Homestead.yaml
+
+# Arduino / PlatformIO / ESP32 build artifacts
+*.hex
+*.bin
+*.elf
+.pio/
+.pioenvs/
+.piolibdeps/
